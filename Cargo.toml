@@ -1,0 +1,19 @@
+[package]
+name = "crazyflie-ecosystem"
+version = "0.1.0"
+edition = "2024"
+description = "Higher-level utilities for the Crazyflie"
+readme = "README.md"
+repository = "https://github.com/bitcraze/crazyflie-ecosystem"
+license = "MIT OR Apache-2.0"
+keywords = ["crazyflie", "quadcopter", "drone"]
+categories = ["hardware-support"]
+exclude = [
+    ".github/*"
+]
+
+[features]
+packet_capture = ["crazyflie-lib/packet_capture"]
+
+[dependencies]
+crazyflie-lib = "0.8.2"
